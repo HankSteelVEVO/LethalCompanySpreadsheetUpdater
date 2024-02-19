@@ -9,7 +9,7 @@ The software works by taking small images of different areas of the screen at a 
 
 In order to save time and gather as much information as possible, only two of the five image captures are used at any given time. The script cycles through states based on the information it is receiving, and switches the captures that it analyzes accordingly. For example, the first state has two captures being analyzed, one for the green text on the terminal (for determining Planet and Weather) and one for the blue text that displays the seed (for switching to the next state). Upon reading the blue text that signifies landing on a planet, the script will update the Planet and Weather values in your spreadsheet, and the cycle to state 2, which utilizes a capture for the amount sold at the end of a day. 
 
-![State Machine](stateSS.png)
+![State Machine](statesSS.png)
 
 This was made with high level runs of the game in mind, things like a team wipe or selling before the final day will disrupt the state cycling system and produce incorrect data. It is important that whoever is running the software views all the information of the game in order to properly update the spreadsheet. To ensure this:
 
