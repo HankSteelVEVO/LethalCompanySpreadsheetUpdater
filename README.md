@@ -1,9 +1,7 @@
 # LethalCompanySpreadsheetUpdater
 # --DESCRIPTION--
 
-Uses Tesseract OCR to automatically scan your game screen for information and sends it directly to a Google Sheet for information gathering or to be used in an overlay for streaming/recording software.
-
-Made for Windows :(
+Uses Tesseract OCR to automatically scan your Lethal Company game screen for information and sends it directly to a Google Sheet for record keeping or to be used in an overlay for streaming/recording software. This software is for Windows OS.
 
 The software works by taking small images of different areas of the screen at a rate of about twice a second, and upon recognizing either digits on certain key phrases, it will update your spreadsheet accordingly. I have my spreadsheet linked to an overlay in OBS, which allows me to not only automatically updated my spreadsheet to keep track of my runs of High Quota%, but also allows the recording/stream of the game to always have important information for reference. 
 
