@@ -21,11 +21,12 @@ This was made with high level runs of the game in mind, things like a team wipe 
 
 You need to have the pytesseract, pillow, opencv, gspread, and numpy libraries to use this software.
 
-To properly set up Tesseract, after downloading, find the filepath and copy it. On line 16 of lethalSSUpdater.py, there is a space to insert this filepath.
+To properly set up Tesseract, after downloading, find the filepath of tesseract.exe and copy it. Towards the top of lethalSSUpdater.py, there is a place to insert this filepath.
 
-This software uses two sets of training data to perform character recognition, one is the default eng.traineddata that comes with Tesseract, the other is a specific training data for digits in the font used by Lethal Company. This was created to increase accuracy of scans for numbers, as there are less characters to misidentify text with, and the font used in the training data matches the font used in game. Make sure to put the eng3270.traineddata file in the tessdata folder of your Tesseract-OCR download folder.
+This software uses two sets of training data to perform character recognition, one is the default eng.traineddata that comes with Tesseract, the other is a specific training data for digits in the font used by Lethal Company, called eng3270.traineddata. This was created to increase accuracy of scans for numbers, as there are less characters to misidentify text with, and the font used in the training data matches the font used in game. Make sure to put the eng3270.traineddata file in the tessdata folder of your Tesseract-OCR download folder.
 
 In order to properly set up the Google Sheets, follow this very helpful guide at https://callmefred.com/how-to-connect-python-to-google-sheets/
+There is a place to put your creds.json file and the name of your spreadsheet towards the top of lethalSSUpdater.py.
 
 Make sure to scroll to the bottom of lethalSSUpdater.py to adjust which cells you'd like to be updated. My spreadsheet, for example, is linked here:
 https://docs.google.com/spreadsheets/d/11De5wmn3VgH-bDDjlPDJxXZHlxHV9jTiyEwoHONQDVo/edit?usp=sharing
